@@ -21,4 +21,10 @@ class Product extends Model
         return $this->belongsTo(Brand::class);
     }
 
+    public function users()
+    {
+        return $this->belongsToMany(User::class, 'orders');
+    }
+
+
 }

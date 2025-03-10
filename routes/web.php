@@ -11,7 +11,7 @@ Route::get('/', function () {
 
 
 Route::get('/products' , function(){
-    $products = Product::simplePaginate(4);
+    $products = Product::with('brand')->simplePaginate(4);
     return view('products' , ["products" => $products]);
 });
 
