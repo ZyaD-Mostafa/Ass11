@@ -17,4 +17,8 @@ class Product extends Model
         'photo'
     ];
 
+    public function brand(){
+        return $this->belongsTo(Brand::class);
+    }
+
 }

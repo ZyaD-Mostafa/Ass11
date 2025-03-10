@@ -11,7 +11,7 @@ Route::get('/', function () {
 
 
 Route::get('/products' , function(){
-    $products = Product::all();
+    $products = Product::simplePaginate(4);
     return view('products' , ["products" => $products]);
 });
 
