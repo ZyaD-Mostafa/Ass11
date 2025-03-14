@@ -18,7 +18,10 @@
 
         @endforeach
 
+
+            <div class="mt-5 d-flex justify-content-center  align-items-center mx-auto">
         {{$products->links()}}
+    </div>
 </div>
 
 </x-layout>
