@@ -11,7 +11,7 @@
                     <h4 class="card-title text-center text-success">{{$product->brand->brand_name}}</h4>
                     <h5 class="card-title text-center">{{$product->name}}</h5>
                     <div class="d-flex justify-content-center">
-                        <a href="{{ route('products.pro', ['id' => $product->id]) }}" class="btn btn-primary mt-3">See More</a>
+                        <a href="{{ route('products.pro', ['product' => $product->id]) }}" class="btn btn-primary mt-3">See More</a>
                     </div>
                 </div>
             </div>

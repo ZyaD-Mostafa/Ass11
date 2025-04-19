@@ -1,7 +1,7 @@
 <x-layout title="Edit">
 
     <div class="container">
-    <form method="post" action="{{route('edit.stroe' , ['id' => $product->id]) }}" enctype="multipart/form-data">
+    <form method="post" action="{{route('edit.stroe' , ['product' => $product->id]) }}" enctype="multipart/form-data">
         @csrf
     <div class="mb-3">
       <label for="Name" class="form-label">Product Name</label>
